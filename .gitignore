@@ -72,6 +72,6 @@ crashlytics-build.properties
 
 Library/PackageCache
 
-/Library/ArtifactDB/
+/Library/ArtifactDB
 
 /Packages/*.tgz
