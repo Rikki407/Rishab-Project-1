@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+    <Tracking>
+        <ImageTarget name="Astronaut-scaled2" size="0.230000 0.397273"/>
+        <ImageTarget name="Astronaut-scaled" size="1.000000 1.727273"/>
+        <ImageTarget name="KnickKnack2.Bottom" size="1.000000 1.000000"/>
+        <ImageTarget name="KnickKnack2.Back" size="1.000000 1.000000"/>
+        <ImageTarget name="KnickKnack2.Front" size="1.000000 1.000000"/>
+        <ImageTarget name="KnickKnack2.Right" size="1.000000 1.000000"/>
+        <ImageTarget name="KnickKnack2.Top" size="1.000000 1.000000"/>
+        <ImageTarget name="KnickKnack2.Left" size="1.000000 1.000000"/>
+        <MultiTarget name="KnickKnack2">
+            <Part name="KnickKnack2.Left" translation="-0.5 0 0" rotation="AD: 0 1 0 -90"/>
+            <Part name="KnickKnack2.Right" translation="0.5 0 0" rotation="AD: 0 1 0 90"/>
+            <Part name="KnickKnack2.Front" translation="0 0 0.5" rotation="AD: 1 0 0 0"/>
+            <Part name="KnickKnack2.Back" translation="0 0 -0.5" rotation="AD: 0 1 0 180"/>
+            <Part name="KnickKnack2.Top" translation="0 0.5 0" rotation="AD: 1 0 0 -90"/>
+            <Part name="KnickKnack2.Bottom" translation="0 -0.5 0" rotation="AD: 1 0 0 90"/>
+        </MultiTarget>
+    </Tracking>
+</QCARConfig>

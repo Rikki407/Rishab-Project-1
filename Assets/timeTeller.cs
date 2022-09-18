@@ -13,7 +13,7 @@ public class timeTeller : MonoBehaviour
 
     void Start()
     {
-    InvokeRepeating("UpdateTime", 0f, 1f);   
+        InvokeRepeating("UpdateTime", 0f, 1f);   
     }
 
    
@@ -34,13 +34,9 @@ public class timeTeller : MonoBehaviour
             }
             else
             {
-                // print out the weather data to make sure it makes sense
-                Debug.Log(":\nReceived: " + webRequest.downloadHandler.text);
-                int dateTime = webRequest.downloadHandler.text.IndexOf("datetime",0);
-                int startTime = webRequest.downloadHandler.text.IndexOf("T",dateTime);
+                int startTime = webRequest.downloadHandler.text.IndexOf("T",webRequest.downloadHandler.text.IndexOf("datetime",0));
                 int endTime = startTime + 8;
                 string time = webRequest.downloadHandler.text.Substring(startTime+1,8);
-                Debug.Log("Time: "+time);
                 timeTextObject.GetComponent<TextMeshPro>().text = "" + time;
             }
         }
